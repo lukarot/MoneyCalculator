@@ -1,6 +1,5 @@
 package moneycalculator.ui.swing;
 import java.awt.Component;
-import java.awt.PopupMenu;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import javax.swing.JComboBox;
@@ -37,7 +36,7 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog{
         amount = textField.getText();
         return textField;
     }
-
+    
     private Component currency() {
         JComboBox combo = new JComboBox(currencies);
         combo.addItemListener(currencyChanged());
@@ -54,7 +53,7 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog{
             }
         };
     }
-
+ 
     private DocumentListener amountChanged() {
         return new DocumentListener() {
             @Override
@@ -82,3 +81,6 @@ public class SwingMoneyDialog extends JPanel implements MoneyDialog{
         };
     }     
 }
+/*
+
+*/
